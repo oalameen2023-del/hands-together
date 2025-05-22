@@ -20,6 +20,25 @@ body {
     color: var(--text-color);
 }
 
+/* Coming Soon Banner */
+.coming-soon-banner {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 0.75rem;
+    font-weight: 500;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1001;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.coming-soon-banner span {
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
 /* Container */
 .container {
     max-width: 1200px;
@@ -33,7 +52,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 45px;
     z-index: 1000;
 }
 
@@ -89,14 +108,14 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?ixlib=rb-1.2.1&auto=format&fit=crop&q=80');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/main-showcase.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 75px;
 }
 
 .hero-content {
@@ -342,7 +361,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
-        top: 2.5rem;
+        top: 45px;
     }
     
     .nav-links {
@@ -350,7 +369,7 @@ footer {
     }
     
     .hero {
-        padding-top: 60px;
+        padding-top: 90px;
     }
     
     .signup-form {
