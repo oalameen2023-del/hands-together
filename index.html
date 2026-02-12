@@ -1,133 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hands Together - Education & Community Development</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hands Together - Education & Community Development</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===== Navbar Styling ===== */
+body {font-family: 'Inter', sans-serif; margin:0; padding:0;}
+header {background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:999;}
+nav {display:flex; justify-content:space-between; align-items:center; padding:10px 20px;}
+nav .logo img {height:50px;}
+.nav-links {list-style:none; display:flex; gap:20px;}
+.nav-links li {position:relative;}
+.nav-links a {text-decoration:none; color:#333; font-weight:600; padding:8px 12px; display:block; transition:0.3s;}
+.nav-links a:hover {background:#f0f0f0; border-radius:5px;}
+/* Dropdown Menu */
+.nav-links .dropdown:hover .dropdown-menu {display:block;}
+.dropdown-menu {display:none; position:absolute; top:40px; left:0; background:#fff; min-width:200px; box-shadow:0 4px 8px rgba(0,0,0,0.1); border-radius:5px; overflow:hidden; transition:0.3s;}
+.dropdown-menu li {border-bottom:1px solid #eee;}
+.dropdown-menu li:last-child {border-bottom:none;}
+.dropdown-menu a {padding:10px 15px;}
+.dropdown-menu a:hover {background:#f9f9f9;}
+/* ===== Sections Styling ===== */
+.section {padding:80px 20px;}
+.section.accent {background:#f9f9f9;}
+.container {max-width:1200px; margin:0 auto;}
+.hero {display:flex; justify-content:center; align-items:center; flex-direction:column; text-align:center; padding:120px 20px; background:#e0f7fa;}
+.hero img {margin-bottom:20px;}
+.cta-button {display:inline-block; padding:12px 25px; background:#00796b; color:#fff; border-radius:5px; text-decoration:none; transition:0.3s;}
+.cta-button:hover {background:#004d40;}
+.showcase-grid {display:flex; flex-wrap:wrap; gap:30px; align-items:center;}
+.showcase-content {flex:1;}
+.showcase-image img {width:100%; border-radius:10px;}
+
+/* ===== Dropdown Animation ===== */
+.nav-links .dropdown:hover .dropdown-menu {
+    display:block;
+    opacity:0;
+    animation:fadeIn 0.3s forwards;
+}
+@keyframes fadeIn {
+    to {opacity:1;}
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .nav-links {flex-direction:column; background:#fff; position:absolute; top:70px; left:0; width:100%; display:none;}
+    .nav-links li {width:100%;}
+    nav.active .nav-links {display:flex;}
+}
+</style>
 </head>
 <body>
-    <div class="coming-soon-banner">
-        <span>🚀 Coming Soon</span> - Join us on our journey to make a difference
-    </div>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="/">
-                    <img src="./assets/images/logo.png" alt="Hands Together Logo">
-                </a>
-            </div>
-         <ul class="nav-links">
-  <li><a href="#about">About</a></li>
-  <li><a href="#mission">Our Mission</a></li>
-  <li><a href="#impact">Impact</a></li>
 
-  <li class="dropdown">
-    <a href="#">Programs ▾</a>
-    <ul class="dropdown-menu">
-      <li><a href="#project1">Project One</a></li>
-      <li><a href="#project2">Project Two</a></li>
-    </ul>
-  </li>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="/"><img src="./assets/images/logo.png" alt="Hands Together Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#mission">Our Mission</a></li>
+            <li><a href="#showcase">Impact</a></li>
+            <li class="dropdown">
+                <a href="#">Programs ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#project1">Education Program</a></li>
+                    <li><a href="#project2">Community Development Program</a></li>
+                </ul>
+            </li>
+            <li><a href="#donate">Donate</a></li>
+        </ul>
+    </nav>
+</header>
 
-  <li><a href="#donate">Donate</a></li>
-</ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            
-            <div class="hero-content">
-                <img src="./assets/images/logo.png" alt="Hands Together Logo" style="width: 250px; height: 250px;">
-                <h1>Empowering Communities Through Education & Development</h1>
-                <p>Join us in our mission to create sustainable change through education, community services, and development programs.</p>
-                <div class="cta-group">
-                    <a href="#about" class="cta-button">Learn More</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>Hands Together is dedicated to creating positive change through education, community development, and sustainable initiatives. We believe in empowering individuals while building stronger, more sustainable communities.</p>
-                <div class="stats">
-                    <div class="stat-item">
-                        <h3>5000+</h3>
-                        <p>Lives Impacted</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>100+</h3>
-                        <p>Programs</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>25+</h3>
-                        <p>Community Centers</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="mission" class="section accent">
-            <div class="container">
-                <h2>Our Mission</h2>
-                <div class="mission-content">
-                    <p>We are committed to sustainable development and community empowerment through three key pillars: quality education, social services, and environmental sustainability. Our mission is to create lasting positive change that benefits current and future generations.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="showcase" class="section showcase">
-            <div class="showcase-grid">
-                <div class="showcase-content">
-                    <h2>Making a Difference</h2>
-                    <p>Through our educational and development programs, we're empowering youth across the Middle East to build a brighter future. Our initiatives focus on providing quality education, fostering leadership skills, and creating sustainable opportunities for growth.</p>
-                    <div class="showcase-features">
-                        <div class="feature">
-                            <h4>Education First</h4>
-                            <p>Quality education and skills development for all ages</p>
-                        </div>
-                        <div class="feature">
-                            <h4>Community Impact</h4>
-                            <p>Building stronger, more resilient communities</p>
-                        </div>
-                        <div class="feature">
-                            <h4>Sustainable Future</h4>
-                            <p>Creating lasting positive change</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="showcase-image">
-                    <img src="https://images.unsplash.com/photo-1603201667141-5a2d4c673378?ixlib=rb-1.2.1&auto=format&fit=crop&q=80" alt="Syrian youth engaged in education">
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Hands Together</h4>
-                    <p>Building sustainable communities through education and development.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#mission">Mission</a></li>
-                        <li><a href="#showcase">Impact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Hands Together. All rights reserved.</p>
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <img src="./assets/images/logo.png" alt="Hands Together Logo" style="width: 250px; height: 250px;">
+            <h1>Empowering Communities Through Education & Development</h1>
+            <p>Join us in our mission to create sustainable change through education, community services, and development programs.</p>
+            <div class="cta-group">
+                <a href="#about" class="cta-button">Learn More</a>
             </div>
         </div>
-    </footer>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Hands Together is dedicated to creating positive change through education, community development, and sustainable initiatives. We believe in empowering individuals while building stronger, more sustainable communities.</p>
+        </div>
+    </section>
+
+    <section id="mission" class="section accent">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>We are committed to sustainable development and community empowerment through three key pillars: quality education, social services, and environmental sustainability. Our mission is to create lasting positive change that benefits current and future generations.</p>
+        </div>
+    </section>
+
+    <section id="showcase" class="section showcase">
+        <div class="showcase-grid">
+            <div class="showcase-content">
+                <h2>Making a Difference</h2>
+                <p>Through our educational and development programs, we're empowering youth across the Middle East to build a brighter future. Our initiatives focus on providing quality education, fostering leadership skills, and creating sustainable opportunities for growth.</p>
+            </div>
+            <div class="showcase-image">
+                <img src="https://images.unsplash.com/photo-1603201667141-5a2d4c673378?ixlib=rb-1.2.1&auto=format&fit=crop&q=80" alt="Syrian youth engaged in education">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Sections -->
+    <section id="project1" class="section">
+        <div class="container">
+            <h2>Education Program</h2>
+            <p>This program focuses on providing quality education and essential skills for children and youth. We aim to empower the next generation and create a lasting positive impact in the community.</p>
+        </div>
+    </section>
+
+    <section id="project2" class="section accent">
+        <div class="container">
+            <h2>Community Development Program</h2>
+            <p>This program aims to support local communities through development initiatives such as vocational training, small projects, and enhancing youth leadership and civic participation skills.</p>
+        </div>
+    </section>
+</main>
+
 </body>
-</html> 
+</html>
