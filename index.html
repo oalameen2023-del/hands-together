@@ -3,10 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hands Together - Education & Community Development</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Hands Together</title>
 <style>
-/* ===== Basic Styles ===== */
 body {margin:0; font-family:'Inter', sans-serif;}
 a {text-decoration:none; color:inherit;}
 ul {list-style:none; padding:0; margin:0;}
@@ -14,7 +12,7 @@ ul {list-style:none; padding:0; margin:0;}
 .section.accent {background:#f9f9f9;}
 .container {max-width:1200px; margin:0 auto;}
 
-/* ===== Navbar ===== */
+/* Navbar */
 header {position:sticky; top:0; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); z-index:999;}
 nav {display:flex; justify-content:space-between; align-items:center; padding:10px 20px;}
 nav .logo img {height:50px;}
@@ -59,27 +57,33 @@ html {scroll-behavior:smooth;}
 
 <header>
 <nav>
-    <div class="logo"><a href="/"><img src="./assets/images/logo.png" alt="Hands Together Logo"></a></div>
+    <div class="logo">
+        <a href="#"><img src="./assets/images/logo.png" alt="Hands Together Logo"></a>
+    </div>
     <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#mission">Our Mission</a></li>
         <li><a href="#showcase">Impact</a></li>
+
+        <!-- Dropdown Projects -->
         <li class="dropdown">
             <a href="#">Programs ▾</a>
             <ul class="dropdown-menu">
-                <li><a href="#project1">Education Program</a></li>
-                <li><a href="#project2">Community Development Program</a></li>
+                <li><a href="#project1">Protection Program</a></li>
+                <li><a href="#project2">Education Program</a></li>
             </ul>
         </li>
+
         <li><a href="#donate">Donate</a></li>
     </ul>
 </nav>
 </header>
 
 <main>
+    <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
-            <img src="./assets/images/logo.png" alt="Hands Together Logo" style="width:250px;height:250px;">
+            <img src="./assets/images/hero-image.png" alt="Hero Image" style="width:250px;height:250px;">
             <h1>Empowering Communities Through Education & Development</h1>
             <p>Join us in our mission to create sustainable change through education, community services, and development programs.</p>
             <div class="cta-group">
@@ -88,6 +92,7 @@ html {scroll-behavior:smooth;}
         </div>
     </section>
 
+    <!-- About -->
     <section id="about" class="section">
         <div class="container">
             <h2>About Us</h2>
@@ -95,6 +100,7 @@ html {scroll-behavior:smooth;}
         </div>
     </section>
 
+    <!-- Mission -->
     <section id="mission" class="section accent">
         <div class="container">
             <h2>Our Mission</h2>
@@ -102,6 +108,7 @@ html {scroll-behavior:smooth;}
         </div>
     </section>
 
+    <!-- Showcase -->
     <section id="showcase" class="section showcase">
         <div class="showcase-grid">
             <div class="showcase-content">
@@ -109,7 +116,7 @@ html {scroll-behavior:smooth;}
                 <p>Through our educational and development programs, we're empowering youth across the Middle East to build a brighter future. Our initiatives focus on providing quality education, fostering leadership skills, and creating sustainable opportunities for growth.</p>
             </div>
             <div class="showcase-image">
-                <img src="https://images.unsplash.com/photo-1603201667141-5a2d4c673378?ixlib=rb-1.2.1&auto=format&fit=crop&q=80" alt="Syrian youth engaged in education">
+                <img src="./assets/images/showcase-image.png" alt="Showcase Image">
             </div>
         </div>
     </section>
@@ -117,17 +124,18 @@ html {scroll-behavior:smooth;}
     <!-- Projects Sections -->
     <section id="project1" class="section">
         <div class="container">
-            <h2>Education Program</h2>
-            <p>This program focuses on providing quality education and essential skills for children and youth. We aim to empower the next generation and create a lasting positive impact in the community.</p>
+            <h2>Protection Program</h2>
+            <p>هذا البرنامج يركز على حماية الفئات الضعيفة وتقديم الدعم الاجتماعي للأطفال والعائلات المحتاجة.</p>
         </div>
     </section>
 
     <section id="project2" class="section accent">
         <div class="container">
-            <h2>Community Development Program</h2>
-            <p>This program aims to support local communities through development initiatives such as vocational training, small projects, and enhancing youth leadership and civic participation skills.</p>
+            <h2>Education Program</h2>
+            <p>هذا البرنامج يركز على توفير التعليم الجيد والمهارات الأساسية للأطفال والشباب وتمكين الجيل القادم لإحداث تأثير إيجابي مستدام في المجتمع.</p>
         </div>
     </section>
+
 </main>
 
 </body>
