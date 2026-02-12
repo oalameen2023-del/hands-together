@@ -407,3 +407,40 @@ footer {
         position: relative;
     }
 } 
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 180px;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
